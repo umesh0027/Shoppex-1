@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppex-Login</title>
+   
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- <link rel="icon" type="image/x-icon" href="../images/dark-logo.png"> -->
+    <script src="https://kit.fontawesome.com/6dccbbc57d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="../img/dark-logo.png" class="logo-shoppex1" alt=""></a>
+        <nav id="navbar">
+            <a class="home" href="#">Home</a>
+            <a class="login" href="#" class="active">Login</a>
+            <a class="signup" href="#">Signup</a>
+            <a class="myCart" href="#">MyCart</a>
+            <a href="#" id="close"><i class="fal fa-times"></i></a>
+        </nav>
+        <div id="mobile">
+         
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+      
+    </header>
+   
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                    <input id="login-email" type="email" required>
+                    <label for="login-email">Email</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input id="login-password" type="password" required>
+                    <label for="login-password">Password</label>
+                </div>
+                <div class="forgot">
+                    <label for=""><input id="checkbox" type="checkbox">Remember me</label>
+                </div>
+                <button class="login-button btn" type="submit">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link"> Signup</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+    <script src="./login.js"></script>
+</body>
+</html>

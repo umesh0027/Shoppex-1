@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shoppex-MyCart</title>
+    <link rel="stylesheet" href="./mycart.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- <link rel="icon" type="image/x-icon" href="../images/icon.png"> -->
+</head>
+
+<body>
+    <header>
+       
+        <a href="#"><img src="../img/dark-logo.png" class="logo-shoppex1" alt=""></a>
+        <nav id="navbar">
+            <a class="home1" href="#" class="active">Home</a>
+            <a class="home" href="../Landingpage/landingpage.html">Shop</a>
+            <a class="profile" href="#">My Profile</a>
+            <a class="myCart" href="#" class="active">My Cart</a>
+            <a class="logout" href="#">Logout</a>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </nav>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </header>
+    <h2>My Cart</h2>
+    <div class="container">
+        <h2>My Cart</h2>
+        <div class="cart">
+            <div class="left">
+                <h3 class="warning hide"> Add items in the cart to proceed further !</h3>
+            </div>
+            <div class="right">
+                <h3>Listed Items</h3>
+                <div class="mainCart"></div>
+                
+                <div class="total">
+                    <div class="text">Total</div>
+                    <div class="total-price"></div>
+                </div>
+                <button id="checkout">Click To Checkout</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="./mycart.js"></script>
+</body>
+
+</html>

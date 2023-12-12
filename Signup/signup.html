@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppex-Signup</title>
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- <link rel="icon" type="image/x-icon" href="../images/icon.png"> -->
+    <script src="https://kit.fontawesome.com/6dccbbc57d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+      
+        <a href="index.html"><img src="../img/dark-logo.png" class="logo-shoppex1" alt=""></a>
+        <nav id="navbar">
+            <a class="home" href="../index.html">Home</a>
+            <a class="login" href="../Login/login.html">Login</a>
+            <a class="signup" href="./signup.html" class="active">Signup</a>
+            <a class="myCart" href="#">My Cart</a>
+            <a href="#" id="close"><i class="fal fa-times"></i></a>
+        </nav>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="form-box register">
+            <h2>Signup</h2>
+            <form>
+                 <script src="https://kit.fontawesome.com/6dccbbc57d.js" crossorigin="anonymous"></script>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input id="signup-name" type="text" required>
+                    <label for="signup-name">Full Name</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input id="signup-email" type="email" required>
+                    <label for="signup-email">Email</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input id="signup-password" type="password" required>
+                    <label for="signup-password">Password</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input id="signup-confirm-password" type="password" required>
+                    <label for="signup-confirm-password">Confirm Password</label>
+                </div>
+                <div class="forgot">
+                    <label for=""><input id="checkbox" type="checkbox" required>I agree to the terms and conditions</label>
+                </div>
+                <button class="signup-button btn" type="submit">Signup</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link"> Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./signup.js"></script>
+</body>
+</html>

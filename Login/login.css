@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../images/backgroundLogin.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 70px;
+    background-color:  #E3E6F3;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+/* .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    user-select: none;
+} */
+.logo-shoppex1{
+    height: 40px;
+       border-radius: 2px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navbar a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    position: relative;
+    margin-left: 40px;
+  }
+#navbar a:hover,
+#navbar a.active{
+  color: #088178;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 420px;
+    background: transparent;
+    border: 2px solid #ffffff80;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px #00000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2{
+    font-size: 1.5rem;
+    color: #162938;
+    text-align: center;
+}
+
+.inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    top: -5px;
+    background: transparent;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.inputbox .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    color: #162938;
+    line-height: 57px;
+}
+
+.forgot{
+    font-size: .9rem;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.forgot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+.forgot a{
+    color: #162938;
+    text-decoration: none;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login-register{   
+    font-size: .9rem;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a{
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+#mobile{
+  display: none;
+  align-items: center;
+}
+#close{
+  display: none;
+}
+
+
+@media (max-width:810px){
+  .wrapper{
+    height: 500px;
+    margin-top: -200px;
+}
+.form-box.login h2{
+  font-size: 40px;
+  font-weight: bold;
+  }
+}
+
+  @media (max-width:799px){
+    #mobile{
+        display: flex;
+        align-items: center;
+      }
+      #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+      }
+      
+      #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right:-300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0 10px;
+        transform: 0.3s;
+      }
+      #navbar.active{
+        right:0px;
+      }
+      #navbar a {
+        margin-top: 10px;
+    }
+  }
+
+@media(max-width: 477px){
+    header{
+        padding: 10px 30px;
+      }
+      .wrapper{
+        width:300px ;
+      }
+      #close{
+        display: initial;
+        position: absolute;
+        top: -180px;
+        left: 0px;
+        color: #222;
+        font-size: 24px;
+      }
+      .wrapper{
+        height: 450px;
+       margin-top: 10px;
+    }
+    .form-box.login h2{
+      font-size: 40px;
+      font-weight: bold;
+    }
+}
